@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body>
+<body onload="Load()">
     <button title="btn_teste" onclick="clique()">
         <svg enable-background="new 0 0 512 512" height="64px" id="Layer_1" version="1.1" viewBox="0 0 512 512"
             width="64px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
@@ -21,6 +21,15 @@
         </svg>
     </button>
     <h3 id="h3-text" onclick="redir()"></h3>
+
+    <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse.</p>
+    <p onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse.</p>
+
+    <select onchange="Change(this)">
+        <option value="1">Primeiro</option>
+        <option value="2">Segundo</option>
+        <option value="3">Terceiro</option>
+    </select>
 </body>
 
 </html>
